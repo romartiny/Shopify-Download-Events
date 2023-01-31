@@ -12,8 +12,9 @@
 <body>
     <div class="container">
         <div class="container-box">
-            <h1>Export orders to CSV</h1>
-            <a href="/download" class="download-button" role="button">EXPORT</a>
+{{--            <h1>Export orders to CSV</h1>--}}
+{{--            <a href="/download" class="download-button" role="button">EXPORT</a>--}}
+            {{ dd($data) }}
         </div>
     </div>
 </body>

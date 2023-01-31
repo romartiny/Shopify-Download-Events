@@ -17,6 +17,4 @@ use App\Http\Controllers\OrdersController;
 Route::middleware(['verify.shopify'])->group(function () {
     Route::get('/', [OrdersController::class, 'showDownloadPage'])
         ->middleware(['verify.shopify'])->name('home');
-    Route::get('/download', [OrdersController::class, 'createOrderCSV'])
-        ->middleware(['verify.shopify'])->name('download');
 });

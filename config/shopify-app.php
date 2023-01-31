@@ -364,10 +364,15 @@ return [
 
     'scripttags' => [
         [
-            'src' => env('SHOPIFY_SCRIPTTAG_1_SRC', env('APP_URL') . '/assets/js/scriptTag.js'),
+            'src' => env('SHOPIFY_SCRIPTTAG_1_SRC', 'https://chocoala.staging.userwerk.com/uw.js'),
             'event' => env('SHOPIFY_SCRIPTTAG_1_EVENT', 'onload'),
             'display_scope' => env('SHOPIFY_SCRIPTTAG_1_DISPLAY_SCOPE', 'order_status')
-        ]
+        ],
+        [
+            'src' => env('SHOPIFY_SCRIPTTAG_2_SRC', env('APP_URL') . '/assets/js/lastOrder.js'),
+            'event' => env('SHOPIFY_SCRIPTTAG_2_EVENT', 'onload'),
+            'display_scope' => env('SHOPIFY_SCRIPTTAG_2_DISPLAY_SCOPE', 'order_status')
+    ]
     ],
 
     /*

@@ -1,0 +1,13 @@
+let sectionHeader1 = document.getElementsByClassName('thank-you__additional-content')[0].querySelector('script');
+        sectionHeader1.innerHTML = `var _uw = _uw || {};
+          _uw.order_id = '1012';
+          _uw.order_total = '0.00';
+          _uw.first_name = 'John';
+          _uw.last_name = 'Link';
+          _uw.postal_code = '24-224';
+          _uw.city = 'Warsaw';
+          _uw.street = 'ulica Popovicha 20, kv 34';
+          _uw.email = 'dsa@gmail.com';
+          _uw.combined_phone_number = '';
+          _uw.country = 'PL';
+`;

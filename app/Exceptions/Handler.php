@@ -3,6 +3,8 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Osiset\ShopifyApp\Exceptions\MissingShopDomainException;
+use Illuminate\Support\Facades\Redirect;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -43,6 +45,10 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
+//        $this->renderable(function(MissingShopDomainException $e){
+//            return Redirect::to('https://www.shopify.com/in/login');
+//        });
+
         $this->reportable(function (Throwable $e) {
             //
         });

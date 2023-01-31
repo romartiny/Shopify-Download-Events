@@ -33,5 +33,3 @@ function show(data) {
     // Setting innerHTML as tab variable
     document.getElementById("scriptTag").innerHTML = tab;
 }
-
-alert('Hi');
